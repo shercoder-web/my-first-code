@@ -255,13 +255,18 @@
   
   .party-content {
       display: grid;
-      grid-template-columns: repeat(3, 1rem);
+      grid-template-columns: repeat(3, 2fr);
       gap: 2rem;
       margin: 2rem 0;
   }
   
   .party-img {
       position: relative;
+  }
+  
+  .party-img img {
+      width: 400px;
+      height: 400px;
   }
   
   .party-img span {
@@ -282,7 +287,8 @@
   .party-text span {
       font-weight: 300;
       display: block;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0rem;
+      padding-top: 0;
   }
   
   .party-text h2 {
@@ -296,26 +302,31 @@
       font-weight: 300;
       font-size: 1.1rem;
       opacity: 0.9;
+      padding-top: 0.7rem;
       padding-bottom: 1.2rem;
   }
   
-  .blog-text a {
+  .party-text a {
       font-family: var(--Roboto);
       font-size: 1.1rem;
       text-decoration: none;
       color: var(--dark);
-      /*color: #fff;
-      */
       padding: 0.55rem 1.2rem;
-      background: var(--dark);
+      background: #fff;
       transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
+      border-radius: 35%;
+      -webkit-border-radius: 35%;
+      -moz-border-radius: 35%;
+      -ms-border-radius: 35%;
+      -o-border-radius: 35%;
   }
   
-  .blog-text a:hover {
-      background: var(--extraDark);
+  .party-text a:hover {
+      background: #7e7d7d;
+      color: var(--extraDark);
   }
   /* Start of party styling*/
